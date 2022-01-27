@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Futureville Police Department</title>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        
+    </head>
+    
+    <body>
+        <header class="header">
+            
+            <h1 class="fdp">Futureville Police Department</h1>    
+    
+        </header>
+        <main>
+            <nav class="navigation">
+                <a href="../index.html">Home</a>
+                <a href="../officers/officers.html">Officers</a>
+                <a href="../suspects/suspects.html">Suspects</a>
+                
+                <a href="../about.html">About FPD</a>
+                <a href="../emergency.html">Emergency</a>
+            </nav>
+            <p class="news"></p>
+            <p class="news"></p>
+
+            <form action = "SearchCasesByDept.php" method = "post"><h2>Search Cases By Dept</h2>
+                Find which cases each detective is assigned to within a specific department.
+                <br><br>
+                <input type = "radio" name = "radio" value = "Vice"> Vice
+                <br>
+                <input type = "radio" name = "radio" value = "Homocide"> Homocide
+                <br>
+                <input type = "radio" name = "radio" value = "Robbery"> Robbery
+                <br>
+                <input type = "radio" name = "radio" value = "every"> Show me ALL the detectives
+                <br><br>
+                <input type = "submit" value = "Submit">
+            </form>
+            <br>
+            <form action = "UpdateEvidenceDescription.php" method = "post"><h2>Update Evidence Description</h2>
+                Enter the evidence ID to update:
+                <br><br>
+                <input type = "text" name = "toUpdate">
+                <br><br>
+                And enter the new description of the evidence:
+                <br><br>
+                <input type = "text" name = "newDescription">
+                <br><br>
+                <input type = "submit" value = "Update">
+            </form>
+
+            
+        </main>
+        <footer>
+            
+            
+            
+        </footer>
+    </body>
+</html>

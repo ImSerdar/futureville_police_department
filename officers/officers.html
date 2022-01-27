@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Futureville Police Department</title>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        
+    </head>
+    
+    <body>
+        <header class="header">
+            
+            <h1 class="fdp">Futureville Police Department</h1>    
+    
+        </header>
+        <main>
+            <nav class="navigation">
+                <a href="../index.html">Home</a>
+                <a href="../cases/cases.html">Cases</a>
+                <a href="../suspects/suspects.html">Suspects</a>
+                
+                <a href="../about.html">About FPD</a>
+                <a href="../emergency.html">Emergency</a>
+            </nav>
+            <p class="news"></p>
+            <p class="news"></p>
+            
+            <form action = "SearchPrecinctsByOfficers.php" method = "post" class="oForm">
+               <h2>Search Precincts By Officers</h2> Use this tool to decide where to assign a new recruit. Are they a detective, patrol officer, or RoboCop?
+                <br><br>
+                <input type = "radio" name = "radio" value = "Detective">Detective
+                <br>
+                <input type = "radio" name = "radio" value = "Patrol">Patrol Officer
+                <br>
+                <input type = "radio" name = "radio" value = "Robocop">RoboCop
+                <br><br>
+                <input type = "submit" value = "Submit">
+            </form>
+            <br>
+            <br>
+
+            <form action = "DeleteRoboCopsOrFunctions.php" method = "post" class="oForm">
+                <h2>Delete a Robocop function or Robocop</h2>Enter the officerID or functionID that you wish to delete: 
+                <input type = "text" name = "deleteTerm">
+                <br><br>
+                <input type = "radio" name = "radio" value = "roboFunction">Delete a Function
+                <br>
+                <input type = "radio" name = "radio" value = "Robocop">Delete a RoboCop
+                <br><br>
+                <input type = "submit" value = "Delete">
+            </form>
+            <br><br><br>
+            <form action = "SearchRoboCopByFunction.php" method = "post">
+               <h2>Search RoboCop By Function</h2> Enter the function to search for:
+                <br><br>
+                <input type = "text" name = "searchTerm">
+                <br><br>
+                <input type = "submit" value = "Search">
+            </form>
+            <br>
+            <form action = "SearchRoboCopByEveryFunction.php" method = "post">
+               <h2>Robocops with all functions</h2> Or click here to find all RoboCops that have EVERY function (UltraBots) or all RoboCops that have NO functions (UselessBots):
+                <br><br>
+                <input type = "radio" name = "radio" value = "ALL"> Search for UltraBots
+                <br>
+                <input type = "radio" name = "radio" value = "NO"> Search for UselessBots
+                <br><br>
+                <input type = "submit" value = "Search">
+            </form>
+            <br>
+            <br>
+            <form action = "InsertNewRoboFunction.php" method = "post">
+                <br><br>
+               <h2>Insert a new Robocop Function</h2> (You can test that the division query is working as intended by creating a new function that no RoboCops have, then searching for UltraBots again):
+                <br><br>
+                Name of new function: <input type = "text" name = "insertTerm">
+                <br><br>
+                <input type = "submit" value = "Create Function">
+            </form>
+
+
+
+        </main>
+        <footer>
+            
+            
+            
+        </footer>
+    </body>
+</html>

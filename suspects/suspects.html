@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Futureville Police Department</title>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        
+    </head>
+    
+    <body>
+        <header class="header">
+            
+            <h1 class="fdp">Futureville Police Department</h1>    
+    
+        </header>
+        <main>
+            <nav class="navigation">
+                <a href="../index.html">Home</a>
+                <a href="../cases/cases.html">Cases</a>
+                <a href="../Officers/officers.html">Officers</a>
+                
+                <a href="../about.html">About FPD</a>
+                <a href="../emergency.html">Emergency</a>
+            </nav>
+            <p class="news"></p>
+            <p class="news"></p>
+
+
+            <form action = "SearchSuspectsByCrimeRating.php" method = "post"><h2>Search Suspects By Crime Rating</h2>
+                Enter the minimum crime rating:
+                <input type = "text" name = "searchTerm">
+                <br>
+                Select which attributes to display:
+                <br>
+                <input type = "checkbox" name = "nameCheck" value = "nameCheck" checked> Name <br>
+                <input type = "checkbox" name = "rateCheck" value = "rateCheck" checked> Crime Rating <br>
+                <input type = "checkbox" name = "idCheck" value = "idCheck"> Suspect ID <br>
+                <br><br>
+                <input type = "submit" value = "Search">
+            </form>
+            <br>
+            <form action = "SortSuspectsByGoodDeedsPerformed.php" method = "post"><h2>Sort Suspects By Good Deeds Performed</h2>
+                Enter the minimum amount of good deeds:
+                <input type = "text" name = "searchTerm">
+                <br>
+                <br><br>
+                <input type = "submit" value = "Search">
+            </form>
+            
+        </main>
+        <footer>
+            
+            
+            
+        </footer>
+    </body>
+</html>
